@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cash Manager</title>
+  <!-- coustom style -->
+  <link rel="stylesheet" href="style.css">
+  <!-- tailwind  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- The navigation menu -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="FINRECORD FINAL LOGO.png" alt=";logo">
+    </div>
+    <ul class="nav-sec">
+      <li><a class="active" href="cash Manager.html">Cash Manager</a></li>
+      <li><a href="Loan Calculator.html">Loan Calculator</a></li>
+      <li><a href="FinBot4.0.html">FinBot4.0</a></li>
+      <li><a href="New Enrollment.html">New Enrollment</a></li>
+      <li><a href="index.html">Log Out</a></li>
+    </ul>
+  </div><!-- header section  -->
+  <div class="alert">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    The Database is Not Stored on this Website Please save Your Data Before Refreshing The Page.
+  </div>
+  <header class="max-w-4xl mx-auto">
+  
+    <section class="bg-slate-300 w-11/12 rounded-md mx-auto p-6 sm:p-10 md:p-12">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-white text-center sm:text-left">
+        <div class="bg-violet-900 px-4 py-4">
+          <h2 class="text-md md:text-xl mb-4">Total Deposit</h2>
+          <h3 class="text-2xl md:text-3xl">
+            ₹<span id="total-diposit">00</span>
+          </h3>
+        </div>
+        <div class="bg-violet-900 px-4 py-4">
+          <h2 class="text-md md:text-xl mb-4">Total Withdraw</h2>
+          <h3 class="text-2xl md:text-3xl">
+            ₹<span id="total-withdraw">00</span>
+          </h3>
+        </div>
+        <div class="bg-violet-900 px-4 py-4">
+          <h2 class="text-md md:text-xl mb-4">Balance</h2>
+          <h3 class="text-2xl md:text-3xl">
+            ₹<span id="total-balance">00</span>
+          </h3>
+        </div>
+      </div>
+      <!-- diposit and withdraw  -->
+      <div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-white mt-12">
+          <div class="bg-blue-900 px-8 py-4 rounded-md">
+            <h2 class="text-xl md:text-2xl mb-8 text-center">Deposit here</h2>
+            <input id="diposit-field" class="h-12 md:h-16 w-full p-4 text-black text-sm md:text-xl mb-8" type="number"
+              placeholder="Enter amount" />
+            <button id="diposit-btn"
+              class="block text-sm sm:text-md md:text-xl p-4 mb-8 bg-emerald-500 w-full rounded-md">
+              Deposit
+            </button>
+          </div>
+          <div class="bg-blue-900 px-8 py-4 rounded-md">
+            <h2 class="text-xl md:text-2xl mb-8 text-center">
+              Withdraw here
+            </h2>
+            <input id="withdraw-field" class="h-12 md:h-16 w-full p-4 text-black text-sm md:text-xl mb-8" type="number"
+              placeholder="Enter amount" />
+            <button id="withdraw-btn"
+              class="block text-sm sm:text-md md:text-xl p-4 mb-8 bg-emerald-500 w-full rounded-md">
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </div>
+      <button class="block text-sm sm:text-md md:text-xl p-4 mb-8 bg-emerald-500 w-full rounded-md"
+        onclick="window.print()">Print </button>
+    </section>
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    
+    <!-- End of .container -->
+  </main>
+  <!-- javaScript -->
+  <script src="all js/Deposit.js"></script>
+  <script src="all js/withdraw.js"></script>
+</body>
+
+</html>

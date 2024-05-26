@@ -1,0 +1,138 @@
+/* Style the navigation menu */
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+  display: flex;
+  width: 100%;
+}
+
+.navbar .logo img {
+  height: 200pxpx;
+  width: 120px;
+  object-fit: contain;
+  mix-blend-mode: color-burn;
+}
+
+.navbar .nav-sec {
+  display: flex;
+  text-decoration: none;
+  position: absolute;
+  left: 45%;
+}
+
+.navbar .nav-sec li {
+  margin: 0 30px 0 25px;
+}
+
+.navbar .nav-sec li a {
+  margin-top: 25px;
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 150%;
+  /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center;
+  /* If you want the text to be centered */
+
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Style the current/active link */
+.navbar a.active {
+  background-color: #04AA6D;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+
+* {
+  font-family: Poppins, sans-serif
+}
+
+@media screen and (max-width: 640px) {
+  .login-form-sm-style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  :root {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
+  footer {
+  text-align: center;
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+}
+}
+
+@media screen and (max-width: 1500px) {
+
+  .navbar .nav-sec {
+    left: 20%;
+  }
+
+  .navbar .nav-sec li {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 945px) {
+  .navbar .nav-sec {
+    display: flex;
+    
+  }
+}
+/* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}

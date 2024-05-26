@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Enrollment</title>
+    <link rel="shortcut icon" href="img/FINRECORD FINAL LOGO.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <style>
+        #results, #loading{
+            display: none;
+   }
+   ul.no-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ .navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+  display: flex;
+  width: 100%;
+}
+
+.navbar .logo img {
+  height: 80px;
+  width: 100px;
+  object-fit: contain;
+  mix-blend-mode: color-burn;
+}
+
+.navbar .nav-sec {
+  display: flex;
+  text-decoration: none;
+  position: absolute;
+  left: 45%;
+}
+
+.navbar .nav-sec li {
+  margin: 0 20px 0 20px;
+}
+
+.navbar .nav-sec li a {
+  margin-top: 25px;
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  width: 150%;
+  /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center;
+  /* If you want the text to be centered */
+
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Style the current/active link */
+.navbar a.active {
+  background-color: #04AA6D;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}* {
+  font-family: Poppins, sans-serif
+}
+
+footer {
+  text-align: center;
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+}
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 35%;
+    }
+    </style>
+
+</head>
+<body>
+    <body class="bg-WHITE">
+        <!-- The navigation menu -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="img/FINRECORD FINAL LOGO.png" alt=";logo">
+    </div>
+    <ul class="nav-sec no-bullets">
+      <li><a href="Cash Manager.html">Cash Manager</a></li>
+      <li><a href="Loan Calculator.html">Loan Calculator</a></li>
+      <li><a href="Finbot4.0.html">FinBot4.0</a></li>
+      <li><a  class="active" href="underconstruction2.html">New Enrollment</a></li>
+      <li><a href="index.html">Log Out</a></li>
+    </ul>
+  </div>
+       <div>
+        <img src="img/comingsoon.png" alt="Paris" class="center"></div>
+
+        <footer>
+          <small>
+            Copyright © 2024 Finrecord. All Rights Reserved.
+          </small>
+        </footer>
+ </body>
+</html>

@@ -1,0 +1,201 @@
+
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+  
+
+  .navbar a {
+    float: left;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    width: 20%; 
+    text-align: center; 
+  }
+  
+
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+
+  .navbar a.active {
+    background-color: #da3f73;
+  }
+
+
+.bd-placeholder-img {
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+}
+
+main > .container {
+    padding: 60px 15px 0;
+}
+
+.parentBox {
+    height:65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerLine {
+    height: 80%;
+    margin-top: auto;
+    width: 1%;
+    background-color: #111212;
+}
+
+.box1 {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+}
+
+.box2 {
+    width: 49%;
+}
+
+input {
+    border-radius: .3rem;
+}
+
+.ImageBoxSize {
+    width: 20%;
+}
+
+.ImageSize {
+    width: 100px;
+    height: 100px;
+}
+
+.tableSize {
+    height: 69vh;
+    overflow: auto
+}
+
+.borderColor {
+    border: 1px solid rgb(0, 0, 0) !important;
+}
+.ErrorControl {
+    border: 1px solid red !important;
+}
+#results, #loading{
+    display: none;
+}
+ul.no-bullets {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+.navbar {
+width: 100%;
+background-color: #555;
+overflow: auto;
+display: flex;
+width: 100%;
+}
+
+.navbar .logo img {
+height: 80px;
+width: 100px;
+object-fit: contain;
+mix-blend-mode: color-burn;
+}
+
+.navbar .nav-sec {
+display: flex;
+text-decoration: none;
+position: absolute;
+left: 45%;
+}
+
+.navbar .nav-sec li {
+margin: 0 20px 0 20px;
+}
+
+.navbar .nav-sec li a {
+margin-top: 25px;
+float: left;
+padding: 12px;
+color: white;
+text-decoration: none;
+font-size: 16px;
+width: 150%;
+text-align: center;
+
+}
+
+.navbar a:hover {
+background-color: #000;
+}
+
+.navbar a.active {
+background-color: #04AA6D;
+}
+
+@media screen and (max-width: 500px) {
+
+.navbar a {
+float: none;
+display: block;
+width: 100%;
+text-align: left; 
+}
+}* {
+font-family: Poppins, sans-serif
+}
+
+footer {
+text-align: center;
+position: fixed;
+padding: 10px 10px 0px 10px;
+bottom: 0;
+width: 100%;
+background-color: #333;
+color: #fff;
+}
+
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 35%;
+}
+/* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
